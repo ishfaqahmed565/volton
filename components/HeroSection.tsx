@@ -3,22 +3,22 @@ import Image from "next/image";
 
 export default function HeroSection() {
 	return (
-		<section>
+		<section className="text-black">
 			<header>
-				<nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 pt-10">
+				<nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
 					<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 						<a href="/" className="flex items-center gap-2">
 							<img src="/logo.jpg" alt="me" className="w-[70px] h-[70px]" />
-							<span className="self-center text-5xl font-bold whitespace-nowrap dark:text-white">
+							<span className="self-center text-5xl font-bold whitespace-nowrap text-black ">
 								volton
 							</span>
 						</a>
 						<div className="flex items-center lg:order-2">
-							<ul className="flex items-center uppercase  mt-4  lg:space-x-8 lg:mt-0">
+							<ul className=" hidden md:flex items-center uppercase  mt-4  lg:space-x-8 lg:mt-0">
 								<li>
 									<a
 										href="#about"
-										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
 									>
 										About
 									</a>
@@ -26,7 +26,7 @@ export default function HeroSection() {
 								<li>
 									<a
 										href="#services"
-										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
 									>
 										Our Services
 									</a>
@@ -34,7 +34,7 @@ export default function HeroSection() {
 								<li>
 									<a
 										href="#contact"
-										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
 									>
 										Contact
 									</a>
@@ -52,7 +52,7 @@ export default function HeroSection() {
 							<button
 								data-collapse-toggle="mobile-menu-2"
 								type="button"
-								className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+								className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 -400 -gray-700 -gray-600"
 								aria-controls="mobile-menu-2"
 								aria-expanded="false"
 							>
@@ -87,10 +87,10 @@ export default function HeroSection() {
 				</nav>
 			</header>
 
-			<section className="bg-white dark:bg-gray-900">
-				<div className="grid max-w-screen-lg  py-10 mx-auto lg:gap-8 xl:gap-22 lg:py-32 lg:grid-cols-12">
-					<div className="mr-auto place-self-center lg:col-span-7 flex flex-col gap-4">
-						<h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
+			<section className="bg-white -900">
+				<div className="grid max-w-screen-lg  py-20 mx-auto lg:gap-8 xl:gap-22 lg:py-32 lg:grid-cols-12">
+					<div className="lg:mr-auto place-self-center lg:col-span-7 flex flex-col gap-4">
+						<h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl ">
 							Empower Your <br />
 							Bussiness With <br />
 							Volton AI
@@ -103,7 +103,7 @@ export default function HeroSection() {
 							Get Started
 						</a>
 					</div>
-					<div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+					<div className="hidden  lg:mt-0 lg:col-span-5 lg:flex">
 						<div className="w-full">
 							<Image src="/hero-logo.png" alt="me" width="280" height="280" />
 						</div>
