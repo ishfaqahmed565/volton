@@ -1,7 +1,7 @@
 import { PropsWithChildren } from "react";
 interface Props {
 	children: React.ReactNode;
-	className: string;
+	className?: string;
 }
 export default function SecTitle(props: Props) {
 	return (
