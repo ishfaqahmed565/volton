@@ -2,7 +2,7 @@ import SecCont from "@/components/shared/SecCont";
 import SecTitle from "./shared/SecTitle";
 export default function AboutSec() {
 	return (
-		<SecCont>
+		<SecCont className="s">
 			<SecTitle className="text-right">Why Volton?</SecTitle>
 			<div className="grid md:grid-cols-2 gap-5">
 				<div className="flex flex-col gap-20">
