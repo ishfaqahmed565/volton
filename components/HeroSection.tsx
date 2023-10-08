@@ -3,19 +3,23 @@ import Image from "next/image";
 
 export default function HeroSection() {
 	return (
-		<section className="text-black">
+		<section className="bg-transparent relative z-[100] text-black">
 			<header>
-				<nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
+				<nav className=" border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
 					<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 						<a href="/" className="flex items-center gap-2">
-							<img src="/logo.jpg" alt="me" className="w-[70px] h-[70px]" />
-							<span className="self-center text-5xl font-bold whitespace-nowrap text-black ">
+							<img
+								src="/logo.jpg"
+								alt="me"
+								className="w-[50px] h-[50px] md:w-[70px] md:h-[70px]"
+							/>
+							<span className="self-center text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap text-black ">
 								volton
 							</span>
 						</a>
 						<div className="flex items-center lg:order-2">
-							<ul className=" hidden md:flex items-center uppercase  mt-4  lg:space-x-8 lg:mt-0">
-								<li>
+							<ul className="flex items-center uppercase lg:space-x-8 lg:mt-0">
+								<li className=" hidden lg:flex">
 									<a
 										href="#about"
 										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
@@ -23,7 +27,7 @@ export default function HeroSection() {
 										About
 									</a>
 								</li>
-								<li>
+								<li className=" hidden lg:flex">
 									<a
 										href="#services"
 										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
@@ -31,7 +35,7 @@ export default function HeroSection() {
 										Our Services
 									</a>
 								</li>
-								<li>
+								<li className=" hidden lg:flex">
 									<a
 										href="#contact"
 										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
@@ -42,7 +46,7 @@ export default function HeroSection() {
 								<li>
 									<a
 										href="#"
-										className="text-xs uppercase text-black border-black border-2 rounded-full px-10 py-2 "
+										className="scale-125 cta-transition text-xs uppercase text-black border-black border-2 rounded-full px-10 py-2 "
 									>
 										Speak with us
 									</a>
@@ -52,7 +56,7 @@ export default function HeroSection() {
 							<button
 								data-collapse-toggle="mobile-menu-2"
 								type="button"
-								className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 -400 -gray-700 -gray-600"
+								className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
 								aria-controls="mobile-menu-2"
 								aria-expanded="false"
 							>
@@ -87,18 +91,20 @@ export default function HeroSection() {
 				</nav>
 			</header>
 
-			<section className="bg-white -900">
+			<section className=" -900">
 				<div className="grid max-w-screen-lg  py-20 mx-auto lg:gap-8 xl:gap-22 lg:py-32 lg:grid-cols-12">
 					<div className="lg:mr-auto place-self-center lg:col-span-7 flex flex-col gap-4">
-						<h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl ">
+						<h1 className="max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl lg:text-left text-center">
 							Empower Your <br />
 							Bussiness With <br />
 							Volton AI
 						</h1>
-
+						<span className="uppercase text-gray-500 text-center lg:text-left">
+							Speicailists in creating Custom <br /> formulated Ai Solutions
+						</span>
 						<a
 							href="#"
-							className="w-fit text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-4 "
+							className="cta-transition lg:w-fit text-center text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-4 "
 						>
 							Get Started
 						</a>
