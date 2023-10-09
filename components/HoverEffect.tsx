@@ -42,7 +42,7 @@ const HoverEffect = () => {
 			{stages.map((stage, index) => (
 				<div
 					key={index}
-					className={`child cursor-pointer group grid  hover:scale-110 duration-500 transition-all duration-500  space-y-[-20px] place-items-center ${
+					className={`child cursor-pointer group grid  hover:scale-[115%] duration-500 transition-all duration-500  space-y-[-20px] place-items-center ${
 						hoveredIndex !== null && hoveredIndex !== index ? "blur" : ""
 					}`}
 					onMouseEnter={() => handleMouseEnter(index)}
