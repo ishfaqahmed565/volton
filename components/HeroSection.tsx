@@ -43,14 +43,14 @@ export default function HeroSection() {
 										Contact
 									</a>
 								</li>
-								<li>
-									<a
-										href="#"
-										className="scale-125 cta-transition text-xs uppercase text-black border-black border-2 rounded-full px-10 py-2 "
-									>
+								<a
+									href="#"
+									className=" hover:shadow-lg hover:border-transparent  group hover-button text-xs uppercase text-black border-black border-2 rounded-full px-10 py-2 "
+								>
+									<span className="group-hover:text-white relative z-[50]">
 										Speak with us
-									</a>
-								</li>
+									</span>
+								</a>
 							</ul>
 
 							<button
@@ -102,11 +102,14 @@ export default function HeroSection() {
 						<span className="uppercase text-gray-500 text-center lg:text-left">
 							Speicailists in creating Custom <br /> formulated Ai Solutions
 						</span>
+
 						<a
 							href="#"
-							className="cta-transition lg:w-fit text-center text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-4 "
+							className="hover:shadow-lg hover:border-transparent  group hover-button lg:w-fit text-center text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-4 "
 						>
-							Get Started
+							<span className="group-hover:text-white relative z-[50]">
+								Get Started
+							</span>
 						</a>
 					</div>
 					<div className="hidden  lg:mt-0 lg:col-span-5 lg:flex">

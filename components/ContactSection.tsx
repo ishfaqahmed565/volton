@@ -3,6 +3,8 @@ import SecTitle from "@/components/shared/SecTitle";
 export default function ContactSection() {
 	return (
 		<SecCont>
+			<div id="contact"></div>
+
 			<h2 className="info-text text-center">
 				Got Questions? Ask Our Chatbot (You Could Have One Tool){" "}
 			</h2>

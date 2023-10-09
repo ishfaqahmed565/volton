@@ -3,6 +3,7 @@ import SecTitle from "./shared/SecTitle";
 export default function AboutSec() {
 	return (
 		<SecCont className="s">
+			<div id="services"></div>
 			<SecTitle className="text-right">Why Volton?</SecTitle>
 			<div className="grid md:grid-cols-2 gap-5">
 				<div className="flex flex-col gap-20">
