@@ -50,8 +50,8 @@ const HoverEffect = () => {
 					<span className="group-hover:translate-y-[-10px] transition-all duration-500 font-extrabold text-5xl text-gray-200/[.8] group-hover:text-[#b7e3e8] transition-all">
 						{stage.step}
 					</span>
-					<div className="pl-2 flex flex-col gap-2 items-center">
-						<h2 className="text-black font-bold text-lg md:text-xl group-hover:text-[#b7e3e8]">
+					<div className="dark:text-white pl-2 flex flex-col gap-2 items-center">
+						<h2 className="dark:text-white  font-bold text-lg md:text-xl group-hover:text-[#b7e3e8]">
 							{stage.title}
 						</h2>
 						<p className="text-sm text-center max-w-[25ch]">{stage.desc}</p>

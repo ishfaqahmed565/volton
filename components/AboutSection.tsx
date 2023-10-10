@@ -11,7 +11,9 @@ export default function AboutSec() {
 					<Image src="/hero-logo.png" alt="me" width="320" height="320" />
 				</div>
 				<div className="flex flex-col gap-10">
-					<SecTitle className="text-right">Why Volton?</SecTitle>
+					<SecTitle className="text-center md:text-right ">
+						Why Volton?
+					</SecTitle>
 
 					<div className="info-text flex flex-col gap-2 text-center md:text-left">
 						<p>

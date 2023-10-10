@@ -11,18 +11,18 @@ export default function HeroSection() {
 							<img
 								src="/logo.jpg"
 								alt="me"
-								className="w-[50px] h-[50px] md:w-[70px] md:h-[70px]"
+								className="w-[55px] h-[55px] md:w-[75px] md:h-[75px]"
 							/>
-							<span className="self-center text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap text-black ">
+							<span className="dark:text-white self-center text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap text-black ">
 								volton
 							</span>
 						</a>
-						<div className="flex items-center lg:order-2">
-							<ul className="flex items-center uppercase lg:space-x-8 lg:mt-0">
+						<div className="dark:text-white flex items-center lg:order-2">
+							<ul className=" flex items-center uppercase lg:space-x-8 lg:mt-0">
 								<li className=" hidden lg:flex">
 									<a
 										href="#about"
-										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
+										className="block py-2 pr-4 pl-3  font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
 									>
 										About
 									</a>
@@ -30,7 +30,7 @@ export default function HeroSection() {
 								<li className=" hidden lg:flex">
 									<a
 										href="#services"
-										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
+										className="block py-2 pr-4 pl-3  font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
 									>
 										Our Services
 									</a>
@@ -38,14 +38,14 @@ export default function HeroSection() {
 								<li className=" hidden lg:flex">
 									<a
 										href="#contact"
-										className="block py-2 pr-4 pl-3 text-black font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
+										className="block py-2 pr-4 pl-3  font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700"
 									>
 										Contact
 									</a>
 								</li>
 								<a
 									href="#"
-									className=" hover:shadow-lg hover:border-transparent font-bold group hover-button text-sm uppercase text-black border-black border-2 rounded-full px-8 py-3 "
+									className=" dark:border-0 dark:bg-white hover:shadow-lg hover:border-transparent font-bold group hover-button text-sm uppercase  border-black border-2 rounded-full px-8 py-3 "
 								>
 									<span className="group-hover:text-white relative z-[50]">
 										Speak with us
@@ -91,7 +91,7 @@ export default function HeroSection() {
 				</nav>
 			</header>
 
-			<section className=" -900">
+			<section className="dark:text-white">
 				<div className="grid max-w-screen-lg  py-20 mx-auto lg:gap-8 xl:gap-22 lg:py-32 lg:grid-cols-12">
 					<div className="lg:mr-auto place-self-center lg:col-span-7 flex flex-col gap-4">
 						<h1 className="max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl lg:text-left text-center">
@@ -105,7 +105,7 @@ export default function HeroSection() {
 
 						<a
 							href="#"
-							className="hover:shadow-lg hover:border-transparent  group hover-button lg:w-fit text-center text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-5 "
+							className="dark:bg-white dark:border-0 hover:shadow-lg hover:border-transparent  group hover-button lg:w-fit text-center text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-5 "
 						>
 							<span className="group-hover:text-white relative z-[50]">
 								Get Started
