@@ -31,13 +31,6 @@ export default function ApproachSection() {
 			<SecTitle>Our Approach</SecTitle>
 
 			<div className="flex flex-col gap-10 relative z-[50] bg-transparent">
-				<div className="flex gap-4 grid place-items-center">
-					<h2 className="text-2xl md:text-5xl font-bold">Development Stages</h2>
-					<p className="font-[500]">
-						As a startup, we are going through the development cycle.
-					</p>
-				</div>
-
 				<HoverEffect></HoverEffect>
 			</div>
 			<img

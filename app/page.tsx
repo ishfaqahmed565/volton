@@ -7,7 +7,7 @@ import FooterSection from "@/components/FooterSection";
 import HoverEffect from "@/components/HoverEffect";
 export default function Home() {
 	return (
-		<main className="scrollbar-thin  relative pb-2 bg-white overflow-x-clip bg-white">
+		<main className="scrollbar-thin  relative  bg-white overflow-x-clip bg-white">
 			<img
 				src="/ellipse1.png"
 				alt=""

@@ -5,23 +5,23 @@ const HoverEffect = () => {
 	const stages = [
 		{
 			step: "1",
-			title: "Concept",
-			desc: "3D renderings of the physical product",
+			title: "Ideate",
+			desc: "Get the idea from concept into a comprehensive plan",
 		},
 		{
 			step: "2",
-			title: "Prototype",
-			desc: "Working version of the physical product",
+			title: "Design",
+			desc: "We work with you to design a tailored system ",
 		},
 		{
 			step: "3",
-			title: "Production",
-			desc: "Manufacturing of the final physical product",
+			title: "Develop",
+			desc: "Our Engineers begin developing the solution",
 		},
 		{
 			step: "4",
-			title: "Shipping",
-			desc: "Final physical product has begun shipping",
+			title: "Deploy",
+			desc: "We deploy the service and make reiterations based on your needs",
 		},
 	];
 	const [hoveredIndex, setHoveredIndex] = useState(null);
