@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import useDarkMode from "@/app/useDarkMode.js";
 export default function HeroSection() {
-	const [isLight, setIsLight] = useState(false);
+	const [isLight, setIsLight] = useState(true);
 
 	useEffect(() => {
 		if (!isLight) {
