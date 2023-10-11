@@ -8,7 +8,7 @@ export default function AboutSec() {
 			<div id="services"></div>
 			<div className="grid md:grid-cols-2 gap-5">
 				<div className="flex items-center justify-center">
-					<Image src="/hero-logo.png" alt="me" width="320" height="320" />
+					<Image src="/about.png" alt="me" width="320" height="320" />
 				</div>
 				<div className="flex flex-col gap-10">
 					<SecTitle className="text-center md:text-right ">

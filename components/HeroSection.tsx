@@ -1,7 +1,22 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
+import useDarkMode from "@/app/useDarkMode.js";
 export default function HeroSection() {
+	const [isLight, setIsLight] = useState(false);
+
+	useEffect(() => {
+		if (!isLight) {
+			document.documentElement.classList.add("dark");
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+	}, [isLight]);
+	const handleToggle = () => {
+		setIsLight(!isLight);
+	};
+
 	return (
 		<section className="bg-transparent relative z-[100] text-black">
 			<header>
@@ -19,6 +34,15 @@ export default function HeroSection() {
 						</a>
 						<div className="dark:text-white flex items-center lg:order-2">
 							<ul className=" flex items-center uppercase lg:space-x-8 lg:mt-0">
+								<div className="md:pr-0 pr-2">
+									<div
+										className={`tdnn ${isLight ? "day" : ""} `}
+										onClick={handleToggle}
+									>
+										<div className={`moon ${isLight ? "sun" : ""}`}></div>
+									</div>
+								</div>
+
 								<li className=" hidden lg:flex">
 									<a
 										href="#about"
@@ -45,7 +69,7 @@ export default function HeroSection() {
 								</li>
 								<a
 									href="#"
-									className=" dark:border-0 dark:bg-white hover:shadow-lg hover:border-transparent font-bold group hover-button text-sm uppercase  border-black border-2 rounded-full px-8 py-3 "
+									className="hidden sm:flex dark:border-0 dark:bg-white hover:shadow-lg hover:border-transparent font-bold group hover-button md:text-sm text-xs uppercase  border-black border-2 rounded-full md:px-8 md:py-3 py-2 px-5 "
 								>
 									<span className="group-hover:text-white relative z-[50]">
 										Speak with us

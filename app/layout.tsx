@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${inter.className} font-quicksans dark:bg-black bg-white scrollbar-thin scrollbar-thumb-[#DCE4FF] scrollbar-thin-rounded-md scrollbar-track-white  `}
+				className={` font-quicksans dark:bg-black bg-white scrollbar-thin scrollbar-thumb-[#DCE4FF] scrollbar-thin-rounded-md scrollbar-track-white  `}
 			>
 				{children}
 			</body>
