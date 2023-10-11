@@ -34,7 +34,7 @@ export default function HeroSection() {
 						</a>
 						<div className="dark:text-white flex items-center lg:order-2">
 							<ul className=" flex items-center uppercase lg:space-x-8 lg:mt-0">
-								<div className="md:pr-0 pr-2">
+								<div className="lg:pr-0 pr-2">
 									<div
 										className={`tdnn ${isLight ? "day" : ""} `}
 										onClick={handleToggle}
