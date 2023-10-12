@@ -15,7 +15,7 @@ export default function ContactSection() {
 						Talk To One Of Our <br />
 						Experts Now
 					</SecTitle>
-					<button className="dark:text-black relative z-[50] cta-transition hover:scale-105 duration-500 info-text uppercase w-[50%] text-center py-2 md:py-5 rounded-full bg-white">
+					<button className="hover:text-white hover:dark:text-white dark:text-black relative z-[50] cta-transition hover:scale-105 duration-500 info-text uppercase w-[50%] text-center py-2 md:py-5 rounded-full bg-white">
 						Click here
 					</button>
 				</div>
