@@ -1,11 +1,16 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import dynamic from "next/dynamic";
+import React from "react";
 
 import useDarkMode from "@/app/useDarkMode.js";
+import { PopupButton } from "@typeform/embed-react";
+
 export default function HeroSection() {
 	const [isLight, setIsLight] = useState(true);
-
+	const ref = useRef();
+	const openPopup = () => ref.current?.open();
 	useEffect(() => {
 		if (!isLight) {
 			document.documentElement.classList.add("dark");
@@ -13,6 +18,7 @@ export default function HeroSection() {
 			document.documentElement.classList.remove("dark");
 		}
 	}, [isLight]);
+
 	const handleToggle = () => {
 		setIsLight(!isLight);
 	};
@@ -26,7 +32,7 @@ export default function HeroSection() {
 							<div className="w-[55px] h-[55px] md:w-[75px] md:h-[75px]">
 								<Image src="/hero-logo.png" alt="me" width="320" height="320" />
 							</div>
-							<span className="dark:text-white self-center text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap text-black ">
+							<span className="dark:text-white self-center text-4xl md:text-5xl font-bold whitespace-nowrap text-black ">
 								volton
 							</span>
 						</a>
@@ -67,14 +73,14 @@ export default function HeroSection() {
 										Contact
 									</a>
 								</li>
-								<a
-									href="#"
+								<button
+									onClick={openPopup}
 									className="hidden sm:flex dark:border-0 dark:bg-white hover:shadow-lg hover:border-transparent font-bold group hover-button md:text-sm text-xs uppercase  border-black border-2 rounded-full md:px-8 md:py-3 py-2 px-5 "
 								>
 									<span className="group-hover:text-white relative z-[50]">
 										Speak with us
 									</span>
-								</a>
+								</button>
 							</ul>
 						</div>
 					</div>
@@ -93,14 +99,14 @@ export default function HeroSection() {
 							Speicailists in creating Custom <br /> formulated Ai Solutions
 						</span>
 
-						<a
-							href="#"
+						<button
+							onClick={openPopup}
 							className="dark:bg-white dark:border-0 hover:shadow-lg hover:border-transparent  group hover-button lg:w-fit text-center text-lg font-bold uppercase text-black border-black border-2 rounded-full px-20 py-5 "
 						>
 							<span className="group-hover:text-white relative z-[50]">
 								Get Started
 							</span>
-						</a>
+						</button>
 					</div>
 					<div className="hidden  lg:mt-0 lg:col-span-5 lg:flex justify-end">
 						<div className=" pt-5">
@@ -108,6 +114,21 @@ export default function HeroSection() {
 						</div>
 					</div>
 				</div>
+				<PopupButton
+					id="CUUTSK37"
+					ref={ref}
+					size={90}
+					hidden={{
+						foo: "Foo Value",
+						bar: "Bar Value",
+					}}
+					onReady={() => {
+						console.log("form ready");
+					}}
+					enableSandbox
+				>
+					<span className="hidden">s</span>
+				</PopupButton>
 			</section>
 		</section>
 	);

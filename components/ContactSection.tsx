@@ -1,6 +1,12 @@
+"use client";
 import SecCont from "@/components/shared/SecCont";
 import SecTitle from "@/components/shared/SecTitle";
+import { PopupButton } from "@typeform/embed-react";
+import { useRef } from "react";
+
 export default function ContactSection() {
+	const ref = useRef();
+	const openPopup = () => ref.current?.open();
 	return (
 		<SecCont>
 			<div id="contact"></div>
@@ -15,11 +21,29 @@ export default function ContactSection() {
 						Talk To One Of Our <br />
 						Experts Now
 					</SecTitle>
-					<button className="hover:text-white hover:dark:text-white dark:text-black relative z-[50] cta-transition hover:scale-105 duration-500 info-text uppercase w-[50%] text-center py-2 md:py-5 rounded-full bg-white">
+					<button
+						onClick={openPopup}
+						className="hover:text-white hover:dark:text-white dark:text-black relative z-[50] cta-transition hover:scale-105 duration-500 info-text uppercase w-[50%] text-center py-2 md:py-5 rounded-full bg-white"
+					>
 						Click here
 					</button>
 				</div>
 			</div>
+			<PopupButton
+				id="CUUTSK37"
+				ref={ref}
+				size={90}
+				hidden={{
+					foo: "Foo Value",
+					bar: "Bar Value",
+				}}
+				onReady={() => {
+					console.log("form ready");
+				}}
+				enableSandbox
+			>
+				<span className="hidden">s</span>
+			</PopupButton>
 		</SecCont>
 	);
 }
