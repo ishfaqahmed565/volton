@@ -10,6 +10,8 @@ import { PopupButton } from "@typeform/embed-react";
 export default function HeroSection() {
 	const [isLight, setIsLight] = useState(true);
 	const ref = useRef();
+	//@ts-ignore
+
 	const openPopup = () => ref.current?.open();
 	useEffect(() => {
 		if (!isLight) {
