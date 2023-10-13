@@ -6,6 +6,7 @@ import { useRef } from "react";
 
 export default function ContactSection() {
 	const ref = useRef();
+	//@ts-ignore
 	const openPopup = () => ref.current?.open();
 	return (
 		<SecCont>
