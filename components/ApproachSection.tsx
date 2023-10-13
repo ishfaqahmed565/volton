@@ -36,7 +36,7 @@ export default function ApproachSection() {
 			<img
 				src="/ellipse2.png"
 				alt=""
-				className="absolute  left-[-12rem]  sm:left-[-25rem] sm:w-[40rem] sm:h-[50rem] 2xl:left-[-30rem] 2xl:w-[50rem] 2xl:h-[80rem]   w-[20rem] h-[40rem]  rounded-full"
+				className="dark:hidden absolute  left-[-12rem]  sm:left-[-25rem] sm:w-[40rem] sm:h-[50rem] 2xl:left-[-30rem] 2xl:w-[50rem] 2xl:h-[80rem]   w-[20rem] h-[40rem]  rounded-full"
 			/>
 		</SecCont>
 	);
