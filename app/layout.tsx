@@ -1,9 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const inter = Inter({ subsets: ["latin"] });
+import localFont from 'next/font/local'
+ 
+
+const quicksans = localFont({ src: './QuicksansAccurateICGFill.ttf', variable:'--font-quicksans' })
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -16,9 +18,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="en" className={`${quicksans.variable} font-sans`}>
 			<body
-				className={`font-quicksans dark:bg-black bg-white scrollbar-thin scrollbar-thumb-[#DCE4FF] scrollbar-thin-rounded-md scrollbar-track-white  `}
+				className={` dark:bg-black bg-white scrollbar-thin scrollbar-thumb-[#DCE4FF] scrollbar-thin-rounded-md scrollbar-track-white  `}
 			>
 				{children}
       <ToastContainer position="bottom-right" />

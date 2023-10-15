@@ -10,7 +10,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				quicksans: ["Quicksans Accurate ICG Fill", "sans"],
+				sans: ['var(--font-quicksans)'],
 			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
