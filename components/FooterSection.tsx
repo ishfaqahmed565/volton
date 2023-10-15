@@ -2,12 +2,21 @@
 
 import SecCont from '@/components/shared/SecCont';
 import { useRef, useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ApproachSection() {
   const [email, setEmail] = useState('');
   const emailRef = useRef(null);
 
   async function onSubmit(email: string) {
+    const emailRegex = /^[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (!emailRegex.test(email)) {
+      console.error('Provided email is not valid.');
+      return;
+    }
+
     const currentDate = new Date();
     const formattedDate = `${currentDate.getFullYear()}-${String(
       currentDate.getMonth() + 1
@@ -23,7 +32,7 @@ export default function ApproachSection() {
       email: email,
     };
 
-    const pipedreamWorkflowUrl = 'https://eo1bqa4p1ozdf7v.m.pipedream.net'
+    const pipedreamWorkflowUrl = 'https://eo1bqa4p1ozdf7v.m.pipedream.net';
 
     try {
       const response = await fetch(pipedreamWorkflowUrl, {
@@ -36,10 +45,12 @@ export default function ApproachSection() {
       });
 
       if (response.ok) {
+        toast.success('Email submitted successfully!')
       } else {
+        toast.error('Email submission failed!')
       }
     } catch (error) {
-      console.error('Error executing Pipedream workflow:', error);
+      toast.error('Unknown Error');
     }
   }
 
