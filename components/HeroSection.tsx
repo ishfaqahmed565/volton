@@ -35,7 +35,6 @@ export default function HeroSection() {
 					src={`https://www.youtube.com/embed/KuLOmOXMJYw?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=KuLOmOXMJYw
 					`}
 					className={`${isLoaded ? "block" : "hidden"} `}
-					frameBorder="0"
 					allowFullScreen
 					allow="autoplay; encrypted-media"
 					title="video"
@@ -65,7 +64,7 @@ export default function HeroSection() {
 
 	return (
 		<div className="relative">
-			<section className="dark:bg-transparent bg-white dark:absolute top-0 right-0 w-full h-full z-[100] text-black">
+			<section className="dark:bg-transparent bg-white top-0 right-0 w-full h-full z-[100] text-black">
 				<header>
 					<nav className=" border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
 						<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
