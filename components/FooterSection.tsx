@@ -58,7 +58,7 @@ export default function ApproachSection() {
     <SecCont className=' '>
       <div className='dark:text-white w-full flex justify-between items-center sm:items-end flex-col sm:flex-row gap-5 sm:gap-0'>
         <span className='dark:text-white'>
-          © All rights resered. By Volton AI.
+          © All rights reserved. By Volton AI.
         </span>
         <div className='flex flex-col gap-4 items-center sm:items-start'>
           <h3 className='text-lg lg:text-2xl font-semibold gap'>
