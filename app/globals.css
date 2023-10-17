@@ -28,7 +28,7 @@
     @apply transition-all hover:shadow-md duration-500   hover:text-white   hover:border-[#44A3DE] hover:bg-[#44A3DE];
   }
   .info-text{
-    @apply  text-sm md:text-base font-bold dark:text-white  ;
+    @apply  text-sm md:text-base  dark:text-white  ;
   }
 } 
 :root {
