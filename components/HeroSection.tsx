@@ -69,7 +69,7 @@ export default function HeroSection() {
 					<nav className=" border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
 						<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 							<a href="/" className="flex items-center gap-2">
-								<div className="w-[55px] h-[55px] md:w-[75px] md:h-[75px]">
+								<div className="w-[50px] h-[45px] ">
 									<Image
 										src="/hero-logo.png"
 										alt="me"
@@ -78,7 +78,7 @@ export default function HeroSection() {
 									/>
 								</div>
 								<span className="dark:text-white self-center text-4xl md:text-5xl font-bold whitespace-nowrap text-black ">
-									volton
+									Volton
 								</span>
 							</a>
 							<div className="dark:text-white flex items-center lg:order-2 relative z-[102] bg-transparent">
@@ -99,7 +99,7 @@ export default function HeroSection() {
 											href="#about"
 											className="block py-2 pr-4 pl-3  font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700 hover:underline transition-all"
 										>
-											About
+											Our Approach
 										</a>
 									</li>
 									<li className=" hidden lg:flex">
@@ -107,7 +107,7 @@ export default function HeroSection() {
 											href="#services"
 											className="block py-2 pr-4 pl-3  font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700 hover:underline transition-all"
 										>
-											Our Services
+											Why Volton?
 										</a>
 									</li>
 									<li className=" hidden lg:flex">
@@ -115,7 +115,7 @@ export default function HeroSection() {
 											href="#contact"
 											className="block py-2 pr-4 pl-3  font-bold  lg:p-0 -400 lg:-white -gray-700 -white lg:-transparent -700 hover:underline transition-all"
 										>
-											Contact
+											Contact Us
 										</a>
 									</li>
 									<button

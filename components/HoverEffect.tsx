@@ -21,7 +21,7 @@ const HoverEffect = () => {
 		{
 			step: "4",
 			title: "Deploy",
-			desc: "We deploy the service and make reiterations based on your needs",
+			desc: "We deploy the service and make reiterations as needed",
 		},
 	];
 	const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -47,7 +47,7 @@ const HoverEffect = () => {
 					}`}
 					onMouseEnter={() => handleMouseEnter(index)}
 				>
-					<span className="group-hover:translate-y-[-10px] transition-all duration-500 font-extrabold text-5xl text-gray-200/[.8] group-hover:text-[#b7e3e8] transition-all">
+					<span className="mb-6 group-hover:translate-y-[-10px] transition-all duration-500 font-extrabold text-5xl text-gray-200/[.8] group-hover:text-[#b7e3e8] transition-all">
 						{stage.step}
 					</span>
 					<div className="dark:text-white pl-2 flex flex-col gap-2 items-center">

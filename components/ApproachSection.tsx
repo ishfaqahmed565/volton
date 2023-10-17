@@ -3,28 +3,6 @@ import SecTitle from "@/components/shared/SecTitle";
 import HoverEffect from "@/components/HoverEffect";
 
 export default function ApproachSection() {
-	const stages = [
-		{
-			step: "1",
-			title: "Concept",
-			desc: "3D renderings of the physical product",
-		},
-		{
-			step: "2",
-			title: "Prototype",
-			desc: "Working version of the physical product",
-		},
-		{
-			step: "3",
-			title: "Production",
-			desc: "Manufacturing of the final physical product",
-		},
-		{
-			step: "4",
-			title: "Shipping",
-			desc: "Final physical product has begun shipping",
-		},
-	];
 	return (
 		<SecCont className="relative ">
 			<div id="about"></div>
