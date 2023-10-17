@@ -69,7 +69,7 @@ export default function HeroSection() {
 					<nav className=" border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
 						<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
 							<a href="/" className="flex items-center gap-2">
-								<div className="w-[50px] h-[45px] ">
+								<div className="w-[40px] h-[30px] ">
 									<Image
 										src="/hero-logo.png"
 										alt="me"
@@ -77,8 +77,8 @@ export default function HeroSection() {
 										height="320"
 									/>
 								</div>
-								<span className="dark:text-white self-center text-4xl md:text-5xl font-bold whitespace-nowrap text-black ">
-									Volton
+								<span className="dark:text-white self-center text-4xl md:text-5xl font-bold whitespace-nowrap text-black tracking-tighter ">
+									volton
 								</span>
 							</a>
 							<div className="dark:text-white flex items-center lg:order-2 relative z-[102] bg-transparent">
