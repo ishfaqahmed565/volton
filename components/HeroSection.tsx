@@ -68,7 +68,7 @@ export default function HeroSection() {
 				<header>
 					<nav className=" border-gray-200 px-4 lg:px-6 py-2.5  pt-10">
 						<div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-							<a href="/" className="flex items-center gap-2">
+							<a href="/" className="flex items-center gap-1">
 								<div className="w-[40px] h-[30px] ">
 									<Image
 										src="/hero-logo.png"
