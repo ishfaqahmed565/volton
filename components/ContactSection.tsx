@@ -13,7 +13,7 @@ export default function ContactSection() {
 			<div id="contact"></div>
 
 			<h2 className="info-text text-center">
-				Got Questions? Ask Our Chatbot (You Could Have One Tool){" "}
+				Got Questions? Ask Our Chatbot (You Could Have One Too!){" "}
 			</h2>
 			<div className="lg:px-10 ">
 				<div className="px-4 bg-gradient-to-r from-[#a19ff8] to-[#c392f5] dark:from-[#0e01cb] dark:via-[#3d01c8] dark:to-[#7502c7] dark:border-none gap-5 py-20 border rounded-3xl shadow w-full bg-purple-500 grid place-items-center">
