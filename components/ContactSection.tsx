@@ -30,19 +30,7 @@ export default function ContactSection() {
 					</button>
 				</div>
 			</div>
-			<PopupButton
-				id="CUUTSK37"
-				ref={ref}
-				size={90}
-				hidden={{
-					foo: "Foo Value",
-					bar: "Bar Value",
-				}}
-				onReady={() => {
-					console.log("form ready");
-				}}
-				enableSandbox
-			>
+			<PopupButton id="CUUTSK37" ref={ref}>
 				<span className="hidden">s</span>
 			</PopupButton>
 		</SecCont>
